@@ -1,0 +1,6 @@
+Analysis
+
+For training and testing the model we created, we used Gaussian Naive Bayes Classifier. 
+
+Some shortcomings that we faced with this model of ours is that, if we had no occurrences of a class label and a certain attribute value together, then the frequency-based probability estimate was always zero. Given the Naive-Bayes' conditional independence assumption, when all the probabilities are multiplied we got zero and this affected the following probability estimate.
+This problem happens when we are drawing samples from a population and the drawn vectors are not fully representative of the population. Lagrange correction and other schemes have been proposed to avoid this undesirable situation.
